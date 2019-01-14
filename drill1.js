@@ -11,13 +11,13 @@ function createGreeting(name, age){
     throw new Error('Arguments not valid'); 
   }
   if(typeof name !== 'string' || typeof age !== 'number'){
-    throw new TypeError(); 
+    throw new TypeError('Type Error'); 
   }  
   const yearOfBirth = getYearOfBirth(age);  
-  return 'Hi, my name is Chris and I\'m 35 years old.' `I was born in ${yearOfBirth}.`;
+  return `Hi, my name is Chris and I'm 35 years old. I was born in ${yearOfBirth}.`;
 }
 try {
-  const greeting1 = createGreeting(35, 35);
+  const greeting1 = createGreeting();
   console.log(greeting1);
 } 
 catch (e) {
