@@ -1,7 +1,7 @@
 'use strict'; 
 function jediName(firstName,lastName){
-  let jediFirst = firstName.slice(0,2); 
-  let jediLast = lastName.slice(0,1);  
+  let jediFirst = firstName.slice(0, 3); 
+  let jediLast = lastName.slice(0, 2);  
   return jediLast + jediFirst;
 }
-jediName('chris', 'irem');
+console.log(jediName('chris', 'irem'));
